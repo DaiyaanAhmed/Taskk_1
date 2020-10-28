@@ -22,13 +22,7 @@
 </template>
 
 <script>
-import { MglMap, MglGeojsonLayer } from "vue-mapbox";
-
 export default {
-  components: {
-    MglMap,
-    MglGeojsonLayer
-  },
   data() {
     return {
       accessToken:

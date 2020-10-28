@@ -3,14 +3,11 @@
 </template>
 
 <script>
-import 'mapbox-gl/dist/mapbox-gl.css'
+
 import Mapbox from "mapbox-gl";
-import { MglMap } from "v-mapbox";
 
 export default {
-  components: {
-    MglMap
-  },
+
   data() {
     return {
       accessToken: 'pk.eyJ1IjoiZGFpeWFhbm1hcGJveCIsImEiOiJja2Z3N2I2dzUydmVmMnlzNXFoNWVrZDFnIn0.kzAZEkwT52gW50jJZhyVgg', 
