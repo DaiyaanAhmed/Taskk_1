@@ -6,6 +6,7 @@
 
 import Mapbox from "mapbox-gl";
 
+
 export default {
 
   data() {
