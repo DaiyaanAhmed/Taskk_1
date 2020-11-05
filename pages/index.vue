@@ -30,6 +30,6 @@ export default {
 <style scoped>
 #map{
   width:100%;
-  height:500px !important;
+  height:100vh !important;
 }
 </style>
