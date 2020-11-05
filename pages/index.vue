@@ -1,7 +1,5 @@
 <template>
-  <div id="map">
   <MglMap :accessToken="accessToken" :mapStyle="mapStyle" />
-  </div>
 </template>
 
 <script>
@@ -20,7 +18,7 @@ export default {
     };
   },
 
-  created() {
+  setup() {
     // We need to set mapbox-gl library here in order to use it in template
     this.mapbox = Mapbox;
   }
@@ -28,8 +26,7 @@ export default {
 </script>
 
 <style scoped>
-#map{
-  width:100%;
+.mapboxgl-map{
   height:100vh !important;
 }
 </style>
