@@ -22,7 +22,12 @@ export default {
   css: [
     'mapbox-gl/dist/mapbox-gl.css',
   ],
-
+  env: {
+    mapToken:
+      process.env.MAP_TOKEN ||
+      'pk.eyJ1IjoiZGFpeWFhbm1hcGJveCIsImEiOiJja2Z3N2I2dzUydmVmMnlzNXFoNWVrZDFnIn0.kzAZEkwT52gW50jJZhyVgg',
+    appVersion: process.env.npm_package_version || '0.0.0',
+  },
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
     { src: '@/plugins/plug.js'}

@@ -22,6 +22,7 @@
       />
     </MglMap>
     <div class="tog">
+      <h4 style="font-weight:bold"> Click to toggle </h4>
     <input type=checkbox @click="pshow=!pshow" id="pswitch" name="Points"> Points <br>
     <input type=checkbox @click="lshow=!lshow" id="pswitch" name="Lines"> Lines <br>
     </div>
@@ -41,8 +42,7 @@ export default {
   },
   data() {
     return {
-      accessToken:
-        "pk.eyJ1IjoiZGFpeWFhbm1hcGJveCIsImEiOiJja2Z3N2I2dzUydmVmMnlzNXFoNWVrZDFnIn0.kzAZEkwT52gW50jJZhyVgg", // your access token. Needed if you using Mapbox maps
+      accessToken: process.env.mapToken, // your access token. Needed if you using Mapbox maps
       pshow: false,
       lshow: false,
       mapStyle: "mapbox://styles/daiyaanmapbox/ckfxn26sp0efl19lgp69obgg8", // your map style
@@ -156,10 +156,10 @@ export default {
   height:75vh !important;
 }
 .tog{
-  width:300px;
+  width:200px;
   margin:20px 40px;
   border: 2px solid navy;
-  padding:15px;
+  padding:0px 15px 10px 15px;;
   border-radius:5px;
 }
 </style>
